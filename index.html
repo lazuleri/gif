@@ -10,7 +10,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
-
+   
     <style>
         /* Edit your header styles here */
 
@@ -32,14 +32,16 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="swiss.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
     <!-- Edit your Markdown URL file location here -->
-    <zero-md src="/htmlTest.md"></zero-md>
+    <zero-md src="/README.md" css-urls='["style.css"]'>
+        <div class="md-html"></div>
+    </zero-md>
 
 </body>
 
